@@ -10,6 +10,7 @@
         <meta-data android:name="onesignal_google_project_number" android:value="str:${onesignal_google_project_number}" />
 
         <receiver
+            android:exported="true"
             android:name="com.onesignal.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
             <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
